@@ -56,7 +56,7 @@ Don't mess up the carpet when fixing the broken window.
 If you would like to access the CLI from anywhere on your machine, one simple approach is to add the following to your `~/.bashrc`:
 
 ```Shell
-alias pp=./location/to/pragprog/pp
+alias pp=~/location/to/pragprog/pp
 ```
 
 ## Contributing
