@@ -6,13 +6,22 @@ This is a little bash script that prints out bits of Hugo Matilla's [summary](ht
 
 Given everyday programming and the subsequent tunnel vision that one sometimes gets during their work, the goal of this project is to have a means to 'ask' for help, inspiration or guidance which can be found in The Pragmatic Programmer book.
 
-## Usage
 
-As the script uses a file located in a separate repo (i.e. as a git submodule), the first step is to sync with that repo:
+## Installation
+
+First clone the repo including its submodules:
 
 ```Shell
-make sync
+git clone --recurse-submodules git@github.com:ronanduddy/pragprog.git
 ```
+
+If you would like to access the CLI from anywhere on your machine, one simple approach is to add the following to your `~/.bashrc`:
+
+```Shell
+alias pp=~/location/to/pragprog/pp
+```
+
+## Usage
 
 Next, test that you can run the following command:
 
@@ -49,14 +58,6 @@ One broken window ...
 
 Don't mess up the carpet when fixing the broken window.
 
-```
-
-## Installation
-
-If you would like to access the CLI from anywhere on your machine, one simple approach is to add the following to your `~/.bashrc`:
-
-```Shell
-alias pp=~/location/to/pragprog/pp
 ```
 
 ## Contributing
