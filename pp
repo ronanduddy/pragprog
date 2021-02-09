@@ -2,7 +2,7 @@
 
 file=The-Pragmatic-Programmer/readme.md
 
-read () {
+readme () {
   less $file
 }
 
@@ -58,7 +58,7 @@ if [[ $# == 0 ]] || [[ $@ =~ 'help' ]]; then
 fi
 
 if [[ $@ =~ 'read' ]]; then
-  read
+  readme
   exit 0
 fi
 
@@ -81,8 +81,6 @@ fi
 arg=$1
 IFS='.' read -ra args <<< "$arg"
 
-tips=$2
-
 if [ ${#args[@]} == 1 ]; then
   # print chapter, e.g. 1 for 'A Pragmatic Philosophy'
   chapter=${args[0]}
@@ -99,7 +97,7 @@ elif [ ${#args[@]} == 2 ]; then
   get_chapter $chapter $next_chapter |
   get_section $section $next_section
 else
-  echo 'Invalid arguments.'
+  echo "Invalid arguments... here's help"
   print_usage
 	exit 1
 fi
