@@ -6,7 +6,6 @@ This is a little bash script that prints out bits of Hugo Matilla's [summary](ht
 
 Given everyday programming and the subsequent tunnel vision that one sometimes gets during their work, the goal of this project is to have a means to 'ask' for help, inspiration or guidance which can be found in The Pragmatic Programmer book.
 
-
 ## Installation
 
 First clone the repo including its submodules:
@@ -21,7 +20,7 @@ To access the CLI tool from anywhere on your machine, one simple approach is to 
 alias pp=~/location/to/pragprog/pp
 ```
 
-Where `~/location/to/pragprog/pp` is the location of the bash script. 
+Where `~/location/to/pragprog/pp` is the location of the bash script.
 
 ## Usage
 
