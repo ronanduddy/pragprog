@@ -1,6 +1,7 @@
 #!/bin/bash
 
-file=The-Pragmatic-Programmer/readme.md
+directory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+file="$directory/The-Pragmatic-Programmer/readme.md"
 
 readme () {
   less $file
