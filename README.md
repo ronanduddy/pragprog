@@ -15,18 +15,20 @@ First clone the repo including its submodules:
 git clone --recurse-submodules git@github.com:ronanduddy/pragprog.git
 ```
 
-If you would like to access the CLI from anywhere on your machine, one simple approach is to add the following to your `~/.bashrc`:
+To access the CLI tool from anywhere on your machine, one simple approach is to add the following to your `~/.bashrc`:
 
 ```Shell
 alias pp=~/location/to/pragprog/pp
 ```
+
+Where `~/location/to/pragprog/pp` is the location of the bash script. 
 
 ## Usage
 
 Next, test that you can run the following command:
 
 ```Shell
-./pp help
+pp help
 ```
 
 The above command will print the following:
@@ -45,7 +47,7 @@ Usage:
 It is possible to print section 2 'Software Entropy' from chapter 1 'A Pragmatic Philosophy', for example, by using the following command:
 
 ```Shell
-./pp 1.2
+pp 1.2
 ```
 
 Which would print something like:
