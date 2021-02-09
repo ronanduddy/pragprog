@@ -8,6 +8,14 @@ Given everyday programming and the subsequent tunnel vision that one sometimes g
 
 ## Usage
 
+As the script uses a file located in a separate repo (i.e. as a git submodule), the first step is to sync with that repo:
+
+```Shell
+make sync
+```
+
+Next, test that you can run the following command:
+
 ```Shell
 ./pp help
 ```
