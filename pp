@@ -49,10 +49,6 @@ remove () {
   sed "/$1/d"
 }
 
-remove_hashes () {
-  sed -E 's/#+\s//g'
-}
-
 if [[ $# == 0 ]] || [[ $@ =~ 'help' ]]; then
   print_usage
   exit 0
@@ -90,8 +86,8 @@ if [ ${#args[@]} == 1 ]; then
   get_chapter $chapter $next_chapter
 elif [ ${#args[@]} == 2 ]; then
   # print section from a chapter, e.g. 1.2 for 'Software Entropy'
-	chapter=${args[0]}
-	section=${args[1]}
+  chapter=${args[0]}
+  section=${args[1]}
   next_chapter=$((chapter+1))
   next_section=$((section+1))
 
@@ -100,7 +96,7 @@ elif [ ${#args[@]} == 2 ]; then
 else
   echo "Invalid arguments... here's help"
   print_usage
-	exit 1
+  exit 1
 fi
 
 exit 0
