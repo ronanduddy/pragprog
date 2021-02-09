@@ -4,7 +4,7 @@ This is a little bash script that prints out bits of Hugo Matilla's [summary](ht
 
 ## Motivation
 
-Given everyday programming and the subsequent tunnel vision that one sometimes gets during their work, the goal of this project is to have a means to 'ask' for help, inspiration or guidance found in The Pragmatic Programmer.
+Given everyday programming and the subsequent tunnel vision that one sometimes gets during their work, the goal of this project is to have a means to 'ask' for help, inspiration or guidance which can be found in The Pragmatic Programmer book.
 
 ## Usage
 
@@ -19,10 +19,10 @@ Usage:
 	help 	Help
 	read 	Read The-Pragmatic-Programmer/readme.md
 	toc 	Print the table of contents, used to find chapters and sections.
-	x 	  Print a chapter. E.g. chapter 1 'A Pragmatic Philosophy'; 1
+	x 	Print a chapter. E.g. chapter 1 'A Pragmatic Philosophy'; 1
 	x.y 	Print a section of a chapter. E.g. chapter 1, section 2 'Software Entropy'; 1.2
 	tips 	Print tips
-	ls    Print checklist
+	ls    	Print checklist
 ```
 
 It is possible to print section 2 'Software Entropy' from chapter 1 'A Pragmatic Philosophy', for example, by using the following command:
