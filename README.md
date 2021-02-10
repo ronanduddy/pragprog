@@ -11,7 +11,7 @@ Given everyday programming and the subsequent tunnel vision that one sometimes g
 First clone the repo including its submodules:
 
 ```Shell
-git clone --recurse-submodules git@github.com:ronanduddy/pragprog.git
+git clone --recurse-submodules https://github.com/ronanduddy/pragprog.git
 ```
 
 To access the CLI tool from anywhere on your machine, one simple approach is to add the following to your `~/.bashrc`:
